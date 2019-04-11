@@ -1,4 +1,4 @@
-public class User {
+public class User implements  EventListener {
 
     enum Gender {Male, Female}
     String name;
@@ -18,4 +18,10 @@ public class User {
         this.zipCode = zipCode;
         this.gender = gender;
     }
+
+    @Override
+    public void update(User user, Show show) {
+        System.out.println(user.name + " has been subscribed to " + show.name);
+    }
+
 }
