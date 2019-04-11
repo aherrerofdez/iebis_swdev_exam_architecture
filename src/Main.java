@@ -24,7 +24,7 @@ public class Main {
         // -----------------------
         // Implement here the code to make Angelica subscribes to Game of Thrones because is her favourite TV Show
         // Add your code here
-        angelica.update(angelica, gameThrones);
+        angelica.notify(angelica, gameThrones);
 
         // -----------------------
 

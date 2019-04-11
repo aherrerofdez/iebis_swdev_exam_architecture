@@ -20,7 +20,7 @@ public class User implements  EventListener {
     }
 
     @Override
-    public void update(User user, Show show) {
+    public void notify(User user, Show show) {
         System.out.println(user.name + " has been subscribed to " + show.name);
     }
 

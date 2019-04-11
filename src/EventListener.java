@@ -1,3 +1,3 @@
 public interface EventListener {
-    void update(User user, Show show);
+    void notify(User user, Show show);
 }
