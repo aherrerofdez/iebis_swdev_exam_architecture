@@ -30,6 +30,7 @@ public class Main {
         gtSeason1.addEpisode(episodeExtra);
 
         // Because of the new episode added Angelica should receive a notification (for simplicity just print out the message in the console)
+        System.out.println(angelica.name + ", the episode " + episodeExtra.title + " from the TV Show " + gameThrones.name + " is available");
 
         // Fearing a leak of episodes HBO releases the whole season overnight
         System.out.println("------------- One year has passed -------------");
@@ -38,6 +39,7 @@ public class Main {
         gameThrones.addSeason(gtSeason2);
 
         // Because of the full season added Angelica should receive a whole set of notifications regarding season 2
+        notifyUser(createGotSeason2Episodes(),angelica, gameThrones);
     }
 
 
@@ -85,5 +87,11 @@ public class Main {
         episodes.add(episode8);
 
         return episodes;
+    }
+
+    public static void notifyUser(ArrayList<Episode> episodes, User user, Show show) {
+        for (Episode episode : episodes){
+            System.out.println(user.name + ", the episode " + episode.title + " from the TV Show " + show.name + " is available");
+        }
     }
 }
