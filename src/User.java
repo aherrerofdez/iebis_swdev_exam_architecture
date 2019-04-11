@@ -1,6 +1,6 @@
 public class User {
 
-    enum Gender {Male, Female};
+    enum Gender {Male, Female}
     String name;
     String emailAddress;
     int age;

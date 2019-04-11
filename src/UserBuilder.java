@@ -1,11 +1,11 @@
 public class UserBuilder {
     private String name;
     private String emailAddress = "";
-    private int age;
+    private int age = -1;
     private String address = "";
     private String city = "";
     private String zipCode = "";
-    private User.Gender gender;
+    private User.Gender gender = User.Gender.Male;
 
     public UserBuilder setName(String name) {
         this.name = name;
